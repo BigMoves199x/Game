@@ -1,8 +1,8 @@
 import React from 'react'
 
-const NewGameButton = () => {
+const NewGameButton = ({onReset}) => {
   return (
-    <p data-testid="newgame" className='newgame' >NewGameButton</p>
+    <p data-testid="newgame" className='reset-button'  onClick={onReset} >New Game</p>
   )
 }
 

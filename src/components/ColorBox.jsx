@@ -1,8 +1,8 @@
 import React from 'react'
 
-const ColorBox = () => {
+const ColorBox = ({color}) => {
   return (
-    <p className='color-Box' data-testid="color-box">ColorBox</p>
+    <div className='color-Box' data-testid="color-box" style={{backgroundColor: color}}></div>
   )
 }
 

@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Scoreboard = () => {
+const Scoreboard = ({score}) => {
   return (
-    <h2 data-testid="score">Scoreboard</h2>
+    <h2 data-testid="score" className='score'>Score: {score}</h2>
   )
 }
 

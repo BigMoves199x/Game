@@ -1,33 +1,27 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import ColorBox from "./components/ColorBox"
+import ColorOptions from "./components/ColorOptions"
+import Scoreboard from "./components/Scoreboard"
+import Status from "./components/Status"
+import Instructions from "./components/Instructions"
+import NewGameButton from "./components/NewGameButton"
+import "./styles.css"
+
+const colors = ["red", "blue", "green", "black", "purple", "orange", "brown"]
 
 function App() {
-  const [count, setCount] = useState(0)
+
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="game-container">
+        <Instructions />
+        <ColorBox />
+        <ColorOptions />
+        <Status />
+        <Scoreboard />
+        <NewGameButton />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+
     </>
   )
 }

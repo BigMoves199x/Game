@@ -1,9 +1,9 @@
-# React + Vite
+# Color Guessing Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A fun and interactive game where you guess a randomly selected color. Earn points by guessing the color correctly, and try to guess as many colors as possible within 10 rounds!
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-# Game
+## Features
+- Guess the hidden color and score points.
+- A new target color is picked after each round.
+- Game ends after 10 rounds with a final score displayed.
+- Instructions and About sections available to guide the player.

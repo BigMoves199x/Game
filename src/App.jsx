@@ -21,13 +21,13 @@ function App() {
   }
 
   function handleGuess(color) {
-    if (gameOver) return; // Stop further guesses if game is over
+    if (gameOver) return; 
 
     if (color === targetColor) {
-      setScore(score + 1);
-      setStatus("✅"); // Correct guess
+      setScore(score + 2);
+      setStatus("✅"); 
     } else {
-      setStatus("❌ Wrong! Try again."); // Wrong guess
+      setStatus("❌");
     }
 
     // Clear the status after 2 seconds
@@ -38,7 +38,7 @@ function App() {
     // Increment guess count
     setGuessCount(guessCount + 1);
 
-    if (guessCount + 1 === 5) {
+    if (guessCount + 1 === 10) {
       setGameOver(true);
       setStatus(`Game Over! Final Score: ${score + (color === targetColor ? 1 : 0)}`);
     } else {
@@ -63,10 +63,8 @@ function App() {
       <hr className="line" />
       <ColorOptions colors={colors} onGuess={handleGuess} disabled={gameOver} />
       <hr className="line" />
-  
-        <Status status={status} />
-        <Scoreboard score={score} />
-     
+      <Status status={status} />
+      <Scoreboard score={score} />
       <NewGameButton onReset={resetGame} />
     </div>
   );

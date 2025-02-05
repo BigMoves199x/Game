@@ -1,12 +1,15 @@
 import React from 'react'
 import './Status.css'
 
-const Status = ({status}) => {
+const Status = ({ status }) => {
 
   return (
-    <p  data-testid="gameStatus" className={`status-message ${status ? "fade-in" : ""}`}>
-    {status}
-  </p>
+    <div>
+      <p data-testid="gameStatus" className={`status-message ${status ? "fade-in" : ""}`}>
+        {status}
+      </p>
+    </div>
+
   )
 }
 

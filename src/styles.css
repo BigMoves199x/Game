@@ -11,7 +11,6 @@ body {
     background-color: #f4f4f4;
 }
 
-/* Game Container - Adjust width for larger screens */
 .game-container {
     margin: 20px auto;
     max-width: 90%;
@@ -22,7 +21,12 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0, 0.2);
 }
 
-/* Color Box - Adjust size for responsiveness */
+.gameInstruction {
+    font-size: 40px;
+    font-weight: 600;
+
+}
+
 .color-Box {
     width: 120px;
     height: 120px;
@@ -31,7 +35,7 @@ body {
     box-shadow: 0px 4px 10px rgba(0,0,0, 0.2);
 }
 
-/* Horizontal Line */
+
 hr {
     background-color: #9f9f9f;
     height: 2px;
@@ -39,7 +43,7 @@ hr {
     border: none;
 }
 
-/* Color Options - Adjust layout for different screen sizes */
+
 .color-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid size */
@@ -51,7 +55,6 @@ hr {
     margin: auto;
 }
 
-/* Color Buttons - Increase size for better touch experience */
 .color-button {
     width: 80px;
     height: 80px;
@@ -71,14 +74,12 @@ hr {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 
-/* Game Status */
 .game-status {
     font-size: 18px;
     font-weight: bold;
     margin-top: 15px;
 }
 
-/* Reset Button - Increase Size */
 .reset-button {
     margin: auto;
     margin-top: 30px;
@@ -86,17 +87,16 @@ hr {
     width: 150px;
     font-size: 16px;
     border: none;
-    background-color: #007bff;
+    background-color: #000000;
     color: white;
     cursor: pointer;
     border-radius: 8px;
 }
 
 .reset-button:hover {
-    background-color: #0056b3;
+    background-color: #5f5f5f;
 }
 
-/* Status and Scoreboard - Display Side by Side */
 .status-score-container {
     display: flex;
     align-items: center;
@@ -105,8 +105,14 @@ hr {
     margin-top: 20px;
 }
 
+
+
+
+
 /* 📱 Responsive for Small Screens */
-@media (max-width: 600px) {
+
+@media only screen and (max-width: 600px) {
+
     .game-container {
         max-width: 95%;
         padding: 15px;
@@ -130,6 +136,12 @@ hr {
 
     .game-status {
         font-size: 20px;
+    }
+
+    .gameInstruction {
+        font-size: 30px;
+        font-weight: 600;
+    
     }
 
     .reset-button {

@@ -7,7 +7,7 @@ const ColorOptions = ({colors, onGuess}) => {
                 <button
                     key={color}
                     className="color-button"
-                    data-testid="colorOptions"
+                    data-testid="colorOption"
                     style={{backgroundColor: color}}
                     onClick={() => onGuess(color)}></button>
             ))}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Instructions = () => {
   return (
-    <p data-testid="gameIntruction" className='gameInstruction'>Guess the correct color!</p>
+    <p data-testid="gameInstructions" className='gameInstruction'>Guess the correct color!</p>
   )
 }
 

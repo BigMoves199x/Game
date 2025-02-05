@@ -11,6 +11,66 @@ body {
     background-color: #f4f4f4;
 }
 
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    text-align: center;
+    padding: 20px;
+    background-color: #5c5c5c; 
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+  
+  .instructions,
+  .about {
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #007bff; 
+  }
+  
+  p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .start-button {
+    background-color: #00b33f;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .start-button:hover {
+    background-color: #00b33f81; 
+  }
+  
+  .start-button:focus {
+    outline: none;
+  }
+  
+
 .game-container {
     margin: 20px auto;
     max-width: 90%;
@@ -27,14 +87,6 @@ body {
 
 }
 
-.color-Box {
-    width: 120px;
-    height: 120px;
-    margin: 20px auto;
-    border-radius: 20px;
-    box-shadow: 0px 4px 10px rgba(0,0,0, 0.2);
-}
-
 
 hr {
     background-color: #9f9f9f;
@@ -43,7 +95,29 @@ hr {
     border: none;
 }
 
+.color-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px; /* Adjust based on parent container */
+  }
+  
+  .color-box {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 8px;
+    border: 2px solid black;
+  }
 
+  .score{
+    color: #000000;
+  }
+  
 .color-options {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Adjust grid size */

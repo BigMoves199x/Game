@@ -26,10 +26,10 @@ function App() {
 
     if (color === targetColor) {
       setScore(score + 2);
-      setStatus("✅");
+      setStatus("✅ Correct");
       setIsRevealed(true); // Reveal the color on correct guess
     } else {
-      setStatus("❌");
+      setStatus("❌ Try again!");
     }
 
     setTimeout(() => {
@@ -38,7 +38,7 @@ function App() {
         setTargetColor(getRandomColor()); // Set a new color if incorrect
         setIsRevealed(false); // Hide again for the next round
       }
-    }, 4000);
+    }, 2000);
 
     setGuessCount(guessCount + 1);
 

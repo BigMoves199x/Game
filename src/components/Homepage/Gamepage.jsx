@@ -38,7 +38,7 @@ function App() {
         setTargetColor(getRandomColor()); // Set a new color if incorrect
         setIsRevealed(false); // Hide again for the next round
       }
-    }, 2000);
+    }, 4000);
 
     setGuessCount(guessCount + 1);
 
@@ -51,7 +51,7 @@ function App() {
         setIsRevealed(false);
        
         setTargetColor(getRandomColor());
-      }, 4000);
+      }, 2000);
     }
   }
 
